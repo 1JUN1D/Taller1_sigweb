@@ -1,0 +1,332 @@
+/* Estilo global para establecer 'box-sizing' en todos los elementos */
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo del documento, incluyendo colores, márgenes y flujo de elementos */
+body {
+    background-color: #333;
+    color: #000000;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    min-height: 100vh;
+}
+
+/* Estilos para la cabecera del documento, incluyendo diseño, colores y posicionamiento */
+header {
+    font-style: italic;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #333;
+    min-height: 70px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+}
+
+/* Estilos para la sección principal del documento, permitiendo que crezca para llenar el espacio disponible */
+main {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+/* Estilos para los enlaces, eliminando la decoración y estableciendo el color */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para el logo, incluyendo alineación de elementos */
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* Estilos para la imagen del logo, incluyendo tamaño y margen */
+.logo img {
+    height: 50px;
+    margin-right: 12px;
+}
+
+/* Estilos para los enlaces de navegación, incluyendo peso de la fuente y margen */
+nav a {
+    font-weight: 600;
+    padding-right: 11px;
+}
+
+/* Estilos para el contenedor principal, incluyendo diseño, colores, imágenes de fondo y fuente */
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f8b78b;
+    background-image: url(/assets/fondoTop2.svg), url(/assets/fondoBotton2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+/* Estilos para la clase 'hoja', incluyendo posicionamiento y flujo de elementos */
+.hoja {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    padding: 20px;
+}
+
+/* Estilos para la clase 'hijo', incluyendo tamaño, márgenes, diseño, alineación y estilos de bordes */
+.hijo {
+    /* background-color:#FE9948; */
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20%;
+    /* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); */
+}
+
+/* Estilos para la clase 'hijo2', incluyendo colores, tamaño, diseño, alineación y sombras */
+.hijo2 {
+    background-color: #F8B78B;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la clase 'img', incluyendo tamaño, bordes, bordes redondeados y sombras */
+.img {
+    display: block;
+    height: 90%;
+    width: 90%;
+    border-radius: 20% 0;
+    border: 2px solid #333;
+    -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la clase 'foto', incluyendo tamaño, márgenes, diseño, colores y sombras */
+.foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color:#F8B78B;
+    height: 300px;
+    width: 250px;
+    margin: 15PX;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 10%;
+    border: 4px solid #FF802A;
+    -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la clase 'info', incluyendo tamaño, márgenes, posicionamiento y sombras */
+.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    background-color: #FF802A;
+    width: 300px;  
+    margin: 10PX;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    position: relative;
+    -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para las listas, incluyendo tipo de lista, márgenes y alineación */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para los elementos de la lista, incluyendo colores, márgenes, bordes redondeados y transiciones */
+ul li {
+    background-color: #343a40;
+    color: white;
+    padding: .5rem;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+/* Estilos para el comportamiento 'hover' de los elementos de la lista, incluyendo colores y puntero del cursor */
+ul li:hover {
+    background-color: #495057;
+    cursor: pointer;
+}
+
+/* Estilos para el texto giratorio, incluyendo tamaño, posicionamiento, transformaciones y puntero del cursor */
+.texto-giratorio {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    cursor: pointer;
+}
+
+/* Estilos para las caras del texto giratorio, incluyendo tamaño, posicionamiento y alineación */
+.cara {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    font-size: 24px;
+}
+
+/* Estilos para la cara frontal del texto giratorio, incluyendo color de fondo */
+.frente {
+    background-color: rgb(248, 162, 57);
+}
+
+/* Estilos para la cara trasera del texto giratorio, incluyendo color de fondo y transformación */
+.atras {
+    background-color: rgb(248, 162, 57);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+
+/* Estilos para el comportamiento 'hover' del texto giratorio, incluyendo transformación */
+.texto-giratorio:hover {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+
+/* Estilos para la clase 'relleno', incluyendo el ancho */
+.relleno{
+    width: 60vw;
+}
+
+/* Estilos para la clase 'extra-info', ocultando el elemento por defecto */
+.extra-info {
+    display: none;
+}
+
+/* Estilos para el pie de página, incluyendo diseño, colores y alineación */
+.pie{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+/* Estilos para los botones, incluyendo tamaño, colores, bordes y puntero del cursor */
+button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #FE9948;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para el comportamiento 'hover' de los botones, incluyendo color de fondo */
+button:hover {
+    background-color: #FF802A;
+}
+
+/* Estilos específicos para los dispositivos con un ancho máximo de 728px */
+@media (max-width: 728px){
+    header{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/* Estilos específicos para los dispositivos con un ancho máximo de 390px */
+@media (max-width: 390px){
+    .relleno{
+        width: 80vw;
+    }
+}  

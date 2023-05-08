@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* Establece el box-sizing en el elemento html para manejar el tamaño y el espacio de manera más predecible */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Establece el box-sizing en todos los elementos y sus pseudo-elementos para que hereden del elemento html */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Estilos para el elemento body, incluyendo color de fondo, imágenes de fondo y posiciones de las imágenes de fondo */
+body {
+  background-color: #092E5D;
+  background-image: url(assets/fondoTop.svg), url(assets/fondoBotton.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+/* Estilos para el elemento header, incluyendo estilo de fuente, diseño, colores de fondo, altura mínima, alineación y relleno */
+header {
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333;
+  min-height: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+/* Estilos para los enlaces, incluyendo la eliminación de la decoración del texto y el color del texto */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para la clase 'logo', incluyendo diseño y alineación */
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Estilos para las imágenes dentro de la clase 'logo', incluyendo altura y margen derecho */
+.logo img {
+  height: 50px;
+  margin-right: 12px;
+}
+
+/* Estilos para los enlaces dentro del elemento nav, incluyendo el peso de la fuente y el relleno derecho */
+nav a {
+  font-weight: 600;
+  padding-right: 11px;
+}
+
+/* Estilos para el elemento main, incluyendo tipo de fuente, tamaño de fuente, diseño, alineación y altura mínima */
+main {
+  font-family: sans-serif;
+  font-size: 62%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la clase 'container', incluyendo ancho, relleno, margen, color de fondo, bordes redondeados, ocultamiento y sombras */
+.container {
+  width: 500px;
+  padding: 1em;
+  margin: 2em;
+  background-color: #2865B8;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para los elementos h1, incluyendo alineación del texto y color del texto */
+h1 {
+  text-align: center;
+  color: #121643;
+}
+
+/* Estilos para la clase 'texto', incluyendo alineación del texto */
+.texto {
+  text-align: justify;
+}
+
+/* Estilos para la clase 'titulo', incluyendo alineación del texto */
+.titulo {
+  text-align: center;
+}
+
+/* Estilos para las diferentes clases 'resaltar', incluyendo colores del texto */
+.resaltar1 {
+  color: chartreuse;
+}
+
+.resaltar2 {
+  color: rgb(249, 191, 65);
+}
+
+.resaltar3 {
+  color: rgb(255, 255, 255);
+}
+
+.resaltar4 {
+  color: rgb(226, 154, 215);
+}
+
+.resaltar5 {
+  color: rgb(255, 239, 157);
+}
+
+/* Estilos para la clase 'card', incluyendo color de fondo, ancho, bordes redondeados, margen, ocultamiento y sombras */
+.card {
+  background-color: #2865B8;
+  width: 328px;
+  border-radius: 16px;
+  margin: 2em;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la clase 'card-header', incluyendo ancho y visualización de bloques */
+.card-header {
+  width: 100%;
+  display: block;
+}
+
+/* Estilos para la clase 'card-body', incluyendo diseño, dirección del eje, alineación y borde inferior */
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #0E2C68;
+}
+
+/* Estilos para la clase 'card-body-contentimg', incluyendo bordes, bordes redondeados, color de fondo, sombras y margen superior */
+.card-body-contentimg {
+  border: 5px solid #0E2C68;
+  border-radius: 50%;
+  background-color: #2865B8;
+  -webkit-box-shadow: 0px -10px 20px #0E2C68;
+          box-shadow: 0px -10px 20px #0E2C68;
+  margin-top: -58px;
+}
+
+/* Estilos para la clase 'card-body-contentimg-img', incluyendo relleno y bordes redondeados */
+.card-body-contentimg-img {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Estilos para la clase 'card-body-title', incluyendo margen superior y tamaño de fuente */
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+/* Estilos para el elemento span dentro de la clase 'card-body-title', incluyendo el color del texto */
+.card-body-title span {
+  color: black;
+}
+
+/* Estilos para la clase 'card-footer', incluyendo diseño y justificación del espacio alrededor */
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* Estilos para la clase 'card-footer-poder', incluyendo alineación del texto, margen inferior y margen superior */
+.card-footer-poder {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/* Estilos para la clase 'pie', incluyendo diseño, relleno, color de fondo, color de texto y justificación del contenido */
+.pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Consulta de medios para adaptar el diseño de la cabecera a dispositivos con ancho máximo de 728px */
+@media (max-width: 728px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+}
